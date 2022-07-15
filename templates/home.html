@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CNT4713 Project</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    {% if session %}
+    <!-- Content Page -->
+    <div>
+      <div class="content">
+        <p><a href="../static/cat.mp4" download>Static Download</a></p>
+        <div class="live">
+          <!-- Insert live feed code here -->
+          <p>Live Feed</p>
+          <p><iframe width="1263" height="710" src="https://www.youtube.com/embed/7i8ARjIeM2k" title="Coral City Camera (Miami's Underwater Livestream)" frameborder="0" allow="autoplay"></iframe> 
+      </div>
+      <br><button class="log" onclick="window.location.href='/logout';">Logout</button>
+    </div>
+    {% else %}
+    <!-- Login Page -->
+    <div>
+      <div class="content">
+        <h1>CNT4713 Final Project</h1>
+        <h2>Florida International University</h2>
+        <h3>By Bryan Alvarenga, Naor Vidal, Gelson Cardoso</h3>
+      </div>
+      <button class="log" onclick="window.location.href='/login';">Login</button>
+    </div>
+    {% endif %}
+  </div>
+</body>
+
+</html>
