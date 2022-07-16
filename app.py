@@ -57,9 +57,9 @@ def logout():
 def home():
     return render_template("home.html")
 
-@app.route("/video_feed")
-def home():
-    return render_template("video_feed.html")
+# @app.route("/video_feed")
+# def home():
+#     return render_template("video_feed.html")
 
 
 if __name__ == "__main__":
