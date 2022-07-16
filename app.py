@@ -57,6 +57,10 @@ def logout():
 def home():
     return render_template("home.html")
 
+@app.route("/video_feed")
+def home():
+    return render_template("video_feed.html")
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=os.environ.get("PORT", 5000))
