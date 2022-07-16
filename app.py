@@ -4,6 +4,9 @@ from urllib.parse import quote_plus, urlencode
 from authlib.integrations.flask_client import OAuth
 from flask import Flask, redirect, render_template, session, url_for
 
+# CNT4713 Final Project
+# Florida International University
+# By Bryan Alvarenga, Gelson Cardoso, Naor Vidal
 
 app = Flask(__name__)
 
@@ -56,10 +59,6 @@ def logout():
 @app.route("/")
 def home():
     return render_template("home.html")
-
-# @app.route("/video_feed")
-# def home():
-#     return render_template("video_feed.html")
 
 
 if __name__ == "__main__":
