@@ -1,4 +1,4 @@
-# gelson-cnt4713
+# bryan-cnt4713
 
 Final project for CNT4713 - FIU Summer/22
 
